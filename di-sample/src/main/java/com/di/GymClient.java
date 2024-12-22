@@ -1,19 +1,24 @@
 package com.di;
 
-public class GymClient implements Client {
-    private String name;
+public class GymClient {
+    private String clientName;
+    private Trainer trainer;
 
-    public GymClient(String name) {
-        this.name = name;
+    // Впровадження залежності через конструктор
+    public GymClient(String clientName, Trainer trainer) {
+        this.clientName = clientName;
+        this.trainer = trainer;
     }
 
-    @Override
-    public void performExercise(String exercise) {
-        System.out.println(name + " виконує вправу: " + exercise);
+    public String getClientName() {
+        return clientName;
     }
 
-    @Override
-    public String getName() {
-        return name;
+    public Trainer getTrainer() {
+        return trainer;
+    }
+
+    public void train() {
+        System.out.println(clientName + " is training with " + trainer.getName() + ", specializing in " + trainer.getSpecialty());
     }
 }

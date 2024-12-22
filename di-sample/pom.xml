@@ -8,12 +8,12 @@
   <name>di-sample</name>
   <url>http://maven.apache.org</url>
   <dependencies>
-      <!-- Guice Dependency -->
-      <dependency>
-      <groupId>com.google.inject</groupId>
-      <artifactId>guice</artifactId>
-      <version>5.1.0</version>
-      </dependency>
+      <!-- Guice dependency -->
+    <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>5.0.0</version>
+    </dependency>
       <!-- Other Dependencies -->
       <dependency>
       <groupId>junit</groupId>

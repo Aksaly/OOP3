@@ -1,6 +1,13 @@
 package com.di;
 
-public interface Client {
-    void performExercise(String exercise);
-    String getName();
+public class Client extends Participant {
+
+    public Client(String name) {
+        super(name);
+    }
+
+    @Override
+    public String toString() {
+        return "Client{name='" + getName() + "'}";
+    }
 }

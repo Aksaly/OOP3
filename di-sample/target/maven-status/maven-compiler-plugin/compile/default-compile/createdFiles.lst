@@ -1,5 +1,9 @@
+com/di/Main.class
 com/di/GymClient.class
 com/di/FitnessTrainer.class
+com/di/FitnessProgram.class
+com/di/GymProgram.class
+com/di/FitnessModule.class
+com/di/Participant.class
 com/di/Client.class
 com/di/Trainer.class
-com/di/GymProgram.class
